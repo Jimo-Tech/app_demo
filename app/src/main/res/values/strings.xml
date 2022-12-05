@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">MegaBoss</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="mtn_data_plan">
+        <item>25mb - ₦50</item>
+        <item>75mb - ₦100</item>
+        <item>200mb - ₦200</item>
+        <item>1gb - ₦350</item>
+        <item>2gb - ₦500</item>
+        <item>350mb - ₦300</item>
+        <item>750mb - ₦500</item>
+        <item>1gb - ₦500</item>
+        <item>6gb - ₦1,500</item>
+        <item>5gb - ₦1000</item>
+        <item>2gb - ₦1,200</item>
+        <item>3gb - ₦1,500</item>
+        <item>5gb - ₦2000</item>
+        <item>6gb - ₦2,500</item>
+        <item>10gb - ₦3,500</item>
+        <item>15gb - ₦5000</item>
+        <item>20gb - ₦3,500</item>
+        <item>40gb - ₦15,000</item>
+        <item>75gb - ₦15,000</item>
+        <item>110gb - ₦20,000</item>
+        <item>60gb - ₦20,000</item>
+        <item>100gb - ₦30,000</item>
+        <item>120gb - ₦50,000</item>
+        <item>400gb - ₦120,000</item>
+        <item>1000gb - ₦250,000</item>
+        <item>2000gb - ₦450,000</item>
+        <item>120gb - ₦50,000</item>
+    </string-array>
+    <string-array name="glo_data_pLan">
+        <item>50mb - ₦50</item>
+        <item>150mb - ₦100</item>
+        <item>350mb - ₦200</item>
+        <item>1.8gbb - ₦500</item>
+        <item>1.9gbb - ₦1000</item>
+        <item>7.5gb - ₦1,500</item>
+        <item>9.2gb - ₦2,000</item>
+        <item>10.8gb - ₦2,500</item>
+        <item>14gb - ₦3,000</item>
+        <item>18gb - ₦4,000</item>
+        <item>24gb - ₦5000</item>
+        <item>29.5gb - ₦8000</item>
+        <item>50gb - ₦10,000</item>
+        <item>93gb - ₦15,000</item>
+        <item>119gb - ₦18,000</item>
+        <item>138gb - ₦20,000</item>
+        <item>225gb - ₦30,000</item>
+        <item>300gb - ₦36,000</item>
+        <item>425gb - ₦50,000</item>
+        <item>525gb - ₦60,000</item>
+        <item>675gb - ₦75,000</item>
+        <item>1TB - ₦100,000</item>
+        <item>1gb - ₦300</item>
+        <item>2gb - ₦500</item>
+        <item>7gb - ₦1,500</item>
+        <item></item>
+    </string-array>
+    <string-array name="airtel_data_plan">
+        <item>50mb - ₦50</item>
+        <item>100mb - ₦100</item>
+        <item>200mb - ₦200</item>
+        <item>1gb - ₦300</item>
+        <item>350mb - ₦300</item>
+        <item>2gb - ₦500</item>
+        <item>2gb - ₦500</item>
+        <item>6gb - ₦1,500</item>
+        <item>30gb - ₦8000</item>
+        <item>40gb - ₦10,000</item>
+        <item>75gb - ₦1,500</item>
+        <item>120gb - ₦20,000</item>
+        <item>240gb - ₦30,00</item>
+        <item>280gb - ₦36,000</item>
+        <item>400gb - ₦50,000</item>
+        <item>15gb - ₦3,000</item>
+        <item>45gb - ₦6,000</item>
+        <item>500mb - ₦100</item>
+        <item>7gb - ₦2,000</item>
+        <item>30gb - ₦5,000</item>
+        <item>20gb - ₦5,000</item>
+        <item>25gb - ₦8,000</item>
+        <item>7ggb - ₦15,00</item>
+        <item>500gb - ₦60,00</item>
+        <item>1Tb - ₦100,000</item>
+    </string-array>
+
+    <string-array name="etisalat_data_plans">
+        <item>10mb - ₦50</item>
+        <item>40mb - ₦100</item>
+        <item>150mb - ₦200</item>
+        <item>1gb - ₦500</item>
+        <item>500mb - ₦500</item>
+        <item>1gb - ₦1,000</item>
+        <item>1.5gb - ₦1,200</item>
+        <item>2.5gb - ₦2,000</item>
+        <item>3.5gb - ₦2,500</item>
+        <item>5gb - ₦3,500</item>
+        <item>5gb - ₦8,000</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="megaboss_is_an_online_data_vendor_which_provides_its_client_with_the_best_and_most_affordable_data_bundles_on_the_planet_we_understand_that_alot_of_businesses_out_there_need_data_to_function_megaboss_is_aimed_at_helping_business_owners_run_their_business_effectively_without_breaking_a_bank_spending_too_much_on_data">MegaBoss is an online data vendor which provides its client with the best and most affordable data bundles on the planet. We understand that alot of businesses out there need data to function. MegaBoss is aimed at helping business owners run their business effectively without breaking a bank(spending too much on data)</string>
+    <string name="nav_open" />
+    <string name="nav_close" />
+</resources>

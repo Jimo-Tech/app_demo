@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="28dp"
+    android:layout_marginTop="44dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homePage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/goy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="Quick buy"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Buy With"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginEnd="94dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/goy" />
+
+        <TextView
+            android:id="@+id/get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="32dp"
+            android:text="your"
+            android:textAlignment="center"
+            android:textColor="#F40808"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/rate"
+            app:layout_constraintTop_toBottomOf="@id/goy" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="32dp"
+            android:text="card fast &amp;"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/get"
+            app:layout_constraintTop_toBottomOf="@id/goy" />
+
+        <TextView
+            android:id="@+id/easy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Easy"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/rate"
+            app:layout_constraintTop_toBottomOf="@id/get" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/search_bar"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Search Anything Here"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/easy">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/stroke_act" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/mtn"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/form"
+            android:src="@drawable/mtn"
+            app:layout_constraintEnd_toStartOf="@+id/glo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/search_bar" />
+
+        <ImageView
+            android:id="@+id/glo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/form"
+            android:src="@drawable/glo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mtn"
+            app:layout_constraintTop_toBottomOf="@id/search_bar" />
+
+        <ImageView
+            android:id="@+id/airtel"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:layout_constraintTop_toBottomOf="@id/mtn"
+            android:src="@drawable/airtel"
+            app:layout_constraintStart_toStartOf="@id/mtn"
+            android:background="@drawable/form"
+            android:layout_marginTop="24dp" />
+
+        <ImageView
+            android:id="@+id/etisalat"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/form"
+            android:layout_marginStart="7dp"
+            android:src="@drawable/etisalat"
+            app:layout_constraintStart_toStartOf="@id/glo"
+            app:layout_constraintTop_toBottomOf="@id/glo"
+            app:layout_constraintStart_toEndOf="@id/mtn"
+            android:layout_marginTop="24dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

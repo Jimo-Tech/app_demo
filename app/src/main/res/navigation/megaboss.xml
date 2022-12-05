@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/megaboss"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.example.megaboss.splashScreen"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreen_to_first_Introduction"
+            app:destination="@id/first_Introduction"
+            app:enterAnim="@android:anim/slide_out_right"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/first_Introduction"
+        android:name="com.example.megaboss.First_Introduction"
+        android:label="fragment_first__introduction"
+        tools:layout="@layout/fragment_first__introduction" >
+        <action
+            android:id="@+id/action_first_Introduction_to_second"
+            app:destination="@id/second"
+            app:exitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_first_Introduction_to_login"
+            app:destination="@id/login"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/second"
+        android:name="com.example.megaboss.second"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_second_to_third"
+            app:destination="@id/third" />
+        <action
+            android:id="@+id/action_second_to_first_Introduction"
+            app:destination="@id/first_Introduction"
+            app:enterAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_second_to_login"
+            app:destination="@id/login"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/third"
+        android:name="com.example.megaboss.third"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" >
+        <action
+            android:id="@+id/action_third_to_login"
+            app:destination="@id/login"
+            app:exitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_third_to_second"
+            app:destination="@id/second" />
+        <action
+            android:id="@+id/action_third_to_login2"
+            app:destination="@id/login"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.megaboss.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_signup"
+            app:destination="@id/signup"
+            app:exitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_login_to_purchase"
+            app:destination="@id/purchase"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/signup"
+        android:name="com.example.megaboss.signup"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_signup_to_purchase"
+            app:destination="@id/purchase"
+            app:exitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_signup_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/purchase"
+        android:name="com.example.megaboss.purchase"
+        android:label="fragment_purchase"
+        tools:layout="@layout/fragment_purchase" />
+</navigation>

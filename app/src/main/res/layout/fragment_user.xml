@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="32dp"
+    android:layout_height="match_parent"
+    android:layout_marginTop="24dp"
+    tools:context=".user">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="32dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:shadowColor="@color/black"
+            android:shadowRadius="4"
+            android:text=" Hello \n Jabulani"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_account_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="28sp"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="32dp"
+            app:cardElevation="18dp"
+            app:layout_constraintTop_toBottomOf="@id/text_name">
+
+            <TextView
+                android:id="@+id/account_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12sp"
+                android:layout_marginTop="24dp"
+                android:text="Account Balance"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="64dp"
+                android:text="₦250,000"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="104dp"
+                android:text="+350.00MB"
+                android:textColor="#5CA605"
+                android:textStyle="italic" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_depo"
+                android:layout_width="97dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="139dp"
+                android:layout_marginBottom="26dp"
+                android:background="@drawable/hunt"
+                android:text="Deposit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/buy_data"
+            android:layout_width="150dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="32dp"
+            android:layout_marginStart="24dp"
+            app:cardElevation="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_account_balance">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginTop="24dp"
+                android:padding="10dp"
+                android:src="@drawable/g_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="148dp"
+                android:text="Buy Data"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/play_game"
+            android:layout_width="150dp"
+            android:layout_height="210dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="32dp"
+            app:cardElevation="10dp"
+            app:layout_constraintStart_toEndOf="@id/buy_data"
+            app:layout_constraintTop_toBottomOf="@id/card_account_balance">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginTop="24dp"
+                android:padding="10dp"
+                android:src="@drawable/game_controller_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="148dp"
+                android:text="Play Games"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/store"
+            android:layout_width="150dp"
+            android:layout_marginStart="24dp"
+            android:layout_height="210dp"
+            app:layout_constraintTop_toBottomOf="@id/buy_data"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="32dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/grocery_store_icon"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Store"
+                android:layout_marginTop="148dp"
+                android:layout_marginStart="54dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="210dp"
+            app:layout_constraintStart_toEndOf="@id/store"
+            app:layout_constraintTop_toBottomOf="@id/play_game"
+            android:layout_marginTop="12dp"
+
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="12dp"
+            app:cardCornerRadius="32dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:src="@drawable/history_icon"
+                android:layout_marginTop="24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="History"
+                android:layout_marginTop="148dp"
+                android:layout_marginStart="54dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
