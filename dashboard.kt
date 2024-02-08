@@ -3,6 +3,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             Text("Hello world!")
+             Text("Hello world!") // second time
         }
     }
 }
