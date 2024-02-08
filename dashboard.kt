@@ -8,3 +8,15 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
+
+@Composable
+fun MessageCard(name: String) {
+    Text(text = "Hello $name!")
+}
+
+@Preview
+@Composable
+fun PreviewMessageCard() {
+    MessageCard("Android")
+}
+  
