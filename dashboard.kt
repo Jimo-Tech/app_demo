@@ -4,6 +4,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Text("Hello world!")
              Text("Hello world!") // second time
+              Text("Hello world!") // second time
         }
     }
 }
